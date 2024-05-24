@@ -5,7 +5,7 @@ class CompteCourant(Compte):
         super().__init__(titulaire, solde)  
 # Appel du constructeur de la classe parent
 
- # Surcharge de la méthode retirer pour le CompteCourant
+ # Surcharge de la méthode retirer aux CompteCourant
     def retirer(self, montant):
         if montant <= self._solde:
             self._solde =self._solde - montant
